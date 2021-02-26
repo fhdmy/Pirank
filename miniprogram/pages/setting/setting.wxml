@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+  <loading hidden="{{hasLogin && !loading}}">加载中...</loading>
+  <view class="punch-setting" wx:for="{{punchIn}}" wx:key="item">
+    <button class="item-name">{{item.name}}</button>
+    <image src="/images/setting-green.png" class='setting-img' bindtap='navgateToDetail' id="{{item.id}}"></image>
+  </view>
+    <button class='save-btn' bindtap='addPunchIn'>添加打卡</button>
+</view>

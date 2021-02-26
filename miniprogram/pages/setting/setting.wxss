@@ -1,0 +1,38 @@
+.container{
+  padding-top: 30rpx;
+}
+.punch-setting{
+  margin-top: 30rpx;
+}
+.item-name{
+  display: inline-block;
+  width:480rpx;
+  height:90rpx;
+  padding:0;
+  background-color:#663333;
+  color:white;
+  font-size:34rpx;
+  border-radius: 10rpx;
+  margin-right: 80rpx;
+}
+.setting-img{
+  display: inline-block;
+  height: 65rpx;
+  width:65rpx;
+  position: relative;
+  top:-14rpx;
+  font-size: 30rpx;
+  padding:0;
+}
+.save-btn{
+  margin-top: 80rpx;
+  margin-bottom: 100rpx;
+  background-color:white;
+  color:#24B9FF;
+  border-radius: 10rpx;
+  border: 1px solid #24B9FF;
+  width:320rpx;
+  height:110rpx;
+  padding:0;
+  display: inline-block;
+}

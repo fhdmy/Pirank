@@ -1,0 +1,40 @@
+/* pages/setDetail/setDetail.wxss */
+@import "../common/lib/weui.wxss";
+input{
+  padding: 0 26rpx;
+  height:100rpx;
+  background-color: #FFFFFF;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #999999;
+}
+picker{
+  padding: 20rpx 26rpx;
+  height:60rpx;
+  background-color: #FFFFFF;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #999999;
+}
+.container{
+  padding-top: 30rpx;
+}
+.save-btn{
+  margin-top: 80rpx;
+  background-color:#24B9FF;
+  color:white;
+  border-radius: 10rpx;
+  width:250rpx;
+  height:100rpx;
+  padding:0;
+  display: inline-block;
+}
+.delete-btn{
+  margin-top: 80rpx;
+  background-color:red;
+  color:white;
+  border-radius: 10rpx;
+  width:250rpx;
+  height:100rpx;
+  padding:0;
+  display: inline-block;
+  margin-right: 80rpx;
+}

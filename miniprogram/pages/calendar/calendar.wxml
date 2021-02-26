@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <wxs module="hasfinished" src="./hasfinished.wxs"></wxs>
+  <view class='box1' style='width: {{ sysW * 7 }}px'>
+    <view class='dateBox'>
+      <image src='/images/arrow-left.png' class='left-btn' bindtap='leftChange'></image>
+      {{ year }} 年 {{ month}} 月
+      <image src='/images/arrow-right.png' class='right-btn' bindtap='rightChange'></image>
+    </view>
+    <block wx:for='{{ weekArr }}' wx:key='{{item}}'>
+      <view style='width: {{ sysW-1 }}px; height: {{ sysW-1 }}px; line-height: {{ sysW-1 }}px;'>{{ item }}</view>
+    </block>
+    <block wx:for='{{ arr }}' wx:key='{{item}}'>
+      <view style='{{ index == 0 ? "margin-left:" + (sysW-1) * marLet + "px;" : "" }}width: {{ sysW-1 }}px; height: {{ sysW-1 }}px; line-height: {{ sysW-1 }}px;' class='{{ item ==  getDate && isToday ? "dateOn" : ""}} {{hasfinished.judge(year,month,item,finishRate) ? "datefinish" : ""}}'>{{ item }}</view>
+    </block>
+  </view>
+</view>

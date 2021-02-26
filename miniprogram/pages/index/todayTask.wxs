@@ -1,0 +1,24 @@
+var todayTask = {
+  judge: function(st,en,inter) {
+    var date=getDate()
+    var y = date.getFullYear();
+    var m = date.getMonth() + 1;
+    var d = date.getDay();
+    var interval=parseInt(inter)
+    var start=getDate(st)
+    var end=getDate(en)
+    var diff = Math.floor((date - start) / (24 * 3600 * 1000))
+    if(diff==0)
+      return true
+    if (date < start || end < date)
+      return false
+    else if(diff%(interval+1)!=0)
+      return false
+    else
+      return true
+  }
+}
+
+module.exports = {
+  judge: todayTask.judge
+}

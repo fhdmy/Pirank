@@ -1,0 +1,42 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/setting/setting",
+    "pages/notebook/notebook",
+    "pages/setDetail/setDetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#24b9ff",
+    "navigationBarTitleText": "Pirank",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#24b9ff",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "打卡",
+        "iconPath": "images/punch-black.png",
+        "selectedIconPath": "images/punch-blue.png"
+      },
+      {
+        "pagePath": "pages/notebook/notebook",
+        "text": "记事",
+        "iconPath": "images/notebook-black.png",
+        "selectedIconPath": "images/notebook-blue.png"
+      },
+      {
+        "pagePath": "pages/setting/setting",
+        "text": "设置",
+        "iconPath": "images/setting-black.png",
+        "selectedIconPath": "images/setting-blue.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+  <wxs module="todayTask" src="./todayTask.wxs"></wxs>
+  <loading hidden="{{hasLogin && !loading}}">加载中...</loading>
+  <calendar class="calendar-wrapper" finishRate="{{finishRate}}"></calendar>
+  <view class="punch-card" wx:for="{{punchIn}}" wx:key="item" wx:if="{{todayTask.judge(item.start,item.end,item.interval)}}">
+    <button class="item-name">{{item.name}}</button>
+    <button class="item-val-tofinish" bindtap='finishTask' wx:if="{{!today[item.id].hasFinished}}" id='{{item.id}}'>完成</button>
+    <button class="item-val-hasfinished" wx:if="{{today[item.id].hasFinished}}" id='{{item.id}}'>已完成</button>
+  </view>
+</view>

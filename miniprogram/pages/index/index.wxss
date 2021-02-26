@@ -1,0 +1,41 @@
+.container{
+  margin-bottom: 100rpx;
+}
+.punch-card{
+  margin-top: 30rpx;
+}
+.calendar-wrapper{
+  height:720rpx;
+  margin-bottom: 30rpx;
+}
+.item-name{
+  display: inline-block;
+  width:350rpx;
+  height:90rpx;
+  padding:0;
+  background-color:#663333;
+  color:white;
+  font-size:34rpx;
+  border-radius: 10rpx;
+  margin-right: 90rpx;
+}
+.item-val-tofinish{
+  display: inline-block;
+  width:160rpx;
+  height:90rpx;
+  padding:0;
+  background-color:#99FF66;
+  color:white;
+  font-size:34rpx;
+  border-radius: 10rpx;
+}
+.item-val-hasfinished{
+  display: inline-block;
+  width:160rpx;
+  height:90rpx;
+  padding:0;
+  background-color:#999999;
+  color:white;
+  font-size:34rpx;
+  border-radius: 10rpx;
+}

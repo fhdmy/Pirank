@@ -1,0 +1,19 @@
+var hasfinished={
+  judge:function(year,month,item,finishRate){
+    var len=finishRate.length
+    for(var i=0;i<len;i++){
+      var time = finishRate[i].split("T")
+      var sp=time[0].split("-")
+      var y=sp[0]
+      var m=sp[1]
+      var d=sp[2]
+      if(year==y && month==m && item==d)
+        return true
+    }
+    return false
+  }
+}
+
+module.exports={
+  judge:hasfinished.judge
+}
